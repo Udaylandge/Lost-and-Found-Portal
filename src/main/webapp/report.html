@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Item - Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Lost & Found Portal</h1>
+    <h2>Report an Item</h2>
+
+    <form action="item" method="post" onsubmit="return validate()">
+
+        <label>Item Name</label>
+        <input type="text" id="item_name" name="item_name"
+               placeholder="Enter item name">
+
+        <label>Description</label>
+        <textarea id="description" name="description"
+                  placeholder="Describe the item"></textarea>
+
+        <label>Location</label>
+        <input type="text" id="location" name="location"
+               placeholder="Where was it lost/found?">
+
+        <label>Type</label>
+        <select id="type" name="type">
+            <option value="">Select Type</option>
+            <option value="Lost">Lost</option>
+            <option value="Found">Found</option>
+        </select>
+
+        <label>Contact</label>
+        <input type="text" id="contact" name="contact"
+               placeholder="Enter contact number/email">
+
+        <button type="submit">Report Item</button>
+
+    </form>
+
+    <br>
+
+    <a href="items.jsp">View Lost & Found Items</a>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS lost_found_db;
+
+USE lost_found_db;
+
+CREATE TABLE item (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    item_name VARCHAR(100) NOT NULL,
+    description VARCHAR(500) NOT NULL,
+    location VARCHAR(200) NOT NULL,
+    type VARCHAR(10) NOT NULL,
+    contact VARCHAR(100) NOT NULL,
+    reported_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
